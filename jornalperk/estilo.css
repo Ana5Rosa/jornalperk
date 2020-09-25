@@ -1,0 +1,286 @@
+/*Limpeza */
+*{
+padding: 0;
+margin: 0;
+}
+/*formatação Geral*/
+body{
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+width: 100%; 
+min-width: 700px;
+max-width: 2000px;
+}
+#principal{
+	width: 100%;
+}
+.espacamento{
+	margin-bottom: 20px;
+}
+/*Cabeçalho*/
+#background{
+background: url(img/fundo.png) repeat-x;
+height: 210px;
+
+}
+.container-topo, .container-meio, .container-fim{
+width: 70%;
+min-width: 600px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+.container-topo img{
+	margin-top: 15px;
+}
+.container-topo ul{
+list-style: none;
+height: 30px;
+margin-top: 75px;
+display: flex;
+justify-content: end;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.container-topo li{
+display: block;
+background: #018655;
+}
+.container-topo a{
+display: block;
+background: url(img/divisor.png) no-repeat center right;
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+line-height: 50px;
+padding: 0 20px;
+}
+.ultimo a{
+background-image: none;
+}
+.container-topo a:hover{
+background: #02cf84;
+}
+/*Marcação de página*/
+#home .home,
+#historia .historia,
+#moda .moda,
+#musica .musica,
+#culinaria .culinaria,
+#celebridades .celebridades{
+background: #086B02;
+}
+/*Formatação da navegação*/
+.fundo {
+	background: #e1efea;
+	border-radius: 5px;
+	padding: 10px;
+}
+.navegacao {
+  width: 30%;
+}
+.navegacao, .conteudo, .conteudo2{
+	margin-top: 30px;
+}
+.navegacao ul{
+list-style: none;
+}
+.navegacao a{
+display: block;
+text-decoration: none;
+background: #fff;
+color: #ec2a3e;
+padding: 10px 5px;
+margin-bottom: 5px;
+border-radius: 10px;
+}
+.navegacao a:hover{
+background: #fff url(img/marcador.png) no-repeat;
+background-position: 10px;
+text-indent: 35px;
+}
+.manchete {
+background: #018655;
+border: 2px solid #018655;
+color: #fff;
+border-radius: 10px;
+line-height: 40px;
+text-indent: 10px;
+margin-bottom: 5px;
+}
+.navegacao fieldset{
+border: none;
+padding: 10px;
+background: #fff;
+width: 90%;
+border-radius: 10px;
+}
+.navegacao #email{
+display: block;
+width: 95%;
+height: 20px;
+border: 2px inset gray;
+margin-top: 3px;
+}
+.navegacao .submit{
+background: #ec2a3e;
+padding: 5px;
+color: #fff;
+margin-top: 3px;
+}
+.navegacao .submit:hover{
+background: #a31120;
+cursor: pointer;
+}
+.caixa3{
+  width: 100%;
+  margin-top: 30px; 
+}
+/*Formatação do conteudo*/
+.conteudo {
+width: 70%;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.conteudo2{
+width: 70%;
+}
+.caixa{
+width: 40%;
+min-width: 210px;
+text-align: justify;
+}
+.caixa2{
+width: 100%;
+margin-left: 20px;
+text-align: justify;
+}
+.caixa img, .caixa2 img{
+width: 100%;
+border: 2px solid #018655;
+}
+.caixa p, .caixa2 p{
+padding: 5px;
+}
+.link-texto a, .playlist a{
+color: #018655;
+}
+.subtitulo{
+background: #ec2a3e;
+text-indent: 5px;
+font-size:0.8em;
+color: #fff;
+border: 2px solid #ec2a3e;
+width: 100%;
+}
+.subtitulo3{
+color: #ec2a3e;
+background: white;
+
+}
+
+/* Formatação caixa de links*/
+.todoslinks{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.espaco{
+	margin-left: 10px;
+	margin-right: 10px; 
+}
+.link a, .caixa3 a{
+	width: 100%;
+/*width: 240px;*/
+text-decoration: none;
+height: 80px;
+display: flex;
+justify-content: space-between;
+font-size: 0.8em;
+text-align: left;
+background: #fff;
+color: #000;
+margin-bottom: 8px;
+border: 1px solid #018655;
+}
+.link a:hover, .caixa3 a:hover{
+background: rgb(218, 216, 216);
+text-indent: 0px;
+}
+.legenda {
+	width: 50%;
+	height: 100%;
+	padding: 2px 4px;
+	font-size: 0.8em;	
+}
+.legenda p{
+border: none;
+background: none;
+}
+.img-link{
+	width: 50%;
+	height: 100%;
+}
+.img-link img{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/*formatação playlist*/
+.playlist{
+	display: flex;
+	flex-direction: column;
+
+	
+}
+.padding{
+	padding: 5px;
+}
+.playlist h5, .playlist a{
+	text-indent: 5px;
+}
+/*formatação rodapé*/
+#rodape{
+	background: #018655;
+	height:50px;
+}
+.container-fim{
+	padding: 5px;
+	color: #fff;
+}
+
+@media(max-width: 900px) {
+	.caixa, .caixa2{
+		width: 85%;
+	}
+	.caixa2{
+		margin-left: 20px;
+	}
+	#rodape{
+		background: none;
+		height: auto;
+	}
+	.container-fim{
+		color: #018655;
+	}
+	.container-topo ul{
+		height: 20px;
+		margin-top: 50px;
+		margin-left: 70px;
+	}
+	.container-topo a{
+		line-height: 40px;
+		font-size: 1.5em;
+		padding: 0 15px;
+	}
+  .navegacao a:hover {
+    padding-left: 50px;
+    text-indent: 0;
+  }
+  .caixa3 a:hover {
+    padding: 10px; 
+  }
+  
+
+}
